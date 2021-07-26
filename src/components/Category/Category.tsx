@@ -19,57 +19,57 @@ const Category: React.FC = () => {
         <h2>Choose questions category:</h2>
       </Headings>
       <Grid>
-        <Link to={`/1`}>
-          <div className="Item" id="9">
+        <Link to={`/9`}>
+          <div className="Item" key="9">
             <img src={GeneralKnowledge} alt="category " />
             <p>General Knowledge</p>
           </div>
         </Link>
 
-        <Link to={`/1`}>
-          <div className="Item" id="17">
+        <Link to={`/17`}>
+          <div className="Item" key="17">
             <img src={Science} alt="category " />
             <p>Science</p>
           </div>
         </Link>
 
-        <Link to={`/3`}>
-          <div className="Item" id="10">
+        <Link to={`/10`}>
+          <div className="Item" key="10">
             <img src={Book} alt="category " />
             <p>Books</p>
           </div>
         </Link>
 
-        <Link to={`/4`}>
-          <div className="Item" id="12">
+        <Link to={`/12`}>
+          <div className="Item" key="12">
             <img src={Music} alt="category " />
             <p>Music</p>
           </div>
         </Link>
 
-        <Link to={`/5`}>
-          <div className="Item" id="18">
+        <Link to={`/18`}>
+          <div className="Item" key="18">
             <img src={Computer} alt="category " />
             <p>Computer Science</p>
           </div>
         </Link>
 
-        <Link to={`/6`}>
-          <div className="Item" id="24">
+        <Link to={`/24`}>
+          <div className="Item" key="24">
             <img src={Politics} alt="category " />
             <p>Politics</p>
           </div>
         </Link>
 
-        <Link to={`/7`}>
-          <div className="Item" id="7">
+        <Link to={`/21`}>
+          <div className="Item" key="21">
             <img src={Sports} alt="category " />
             <p>Sports</p>
           </div>
         </Link>
 
-        <Link to={`/8`}>
-          <div className="Item" id="11">
+        <Link to={`/11`}>
+          <div className="Item" key="11">
             <img src={Movies} alt="category" />
             <p>Movies</p>
           </div>
