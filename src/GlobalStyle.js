@@ -41,4 +41,12 @@ export const GlobalStyle = createGlobalStyle`
       color: var(--white);
     }
   }
+
+  a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
 `;

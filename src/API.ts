@@ -9,11 +9,11 @@ export type Question = {
   type: string;
 };
 
-export type QuestionState = Question & [answers: string[]];
+export type QuestionState = Question & { answers: string[] };
 
 export const fetchQuizQuestions = async (
-  amount: string,
-  category: number,
+  amount: number,
+  category: string,
   difficulty: string,
   type: string
 ) => {

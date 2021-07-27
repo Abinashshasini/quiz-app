@@ -15,12 +15,11 @@ import {
 
 const SelectComponents: React.FC = () => {
   const { id } = useParams();
-  console.log(id);
 
   const dificultyOfQuestion = [
-    { id: 1, value: "easy", name: "EASY" },
-    { id: 2, value: "medium", name: "MEDIUM" },
-    { id: 3, value: "hard", name: "HARD" },
+    { id: 1, value: "easy", name: "Easy" },
+    { id: 2, value: "medium", name: "Medium" },
+    { id: 3, value: "hard", name: "Hard" },
   ];
 
   const quesetionType = [
@@ -56,26 +55,26 @@ const SelectComponents: React.FC = () => {
 
         <FormControl variant="outlined" className="formControl">
           <InputLabel id="demo-simple-select-outlined-label">
-            Select Dificulty of questions
+            Select Dificulty
           </InputLabel>
           <Select
             labelId="demo-simple-select-outlined-label"
             id="demo-simple-select-outlined"
             value={dificulty}
-            onChange={(e: any) => {
-              setDificulty(e.target.value);
-            }}
+            onChange={(e: any) => setDificulty(e.target.value)}
             label="Select Dificulty of questions"
           >
             {dificultyOfQuestion.map((element) => (
-              <MenuItem value={element.value}>{element.name}</MenuItem>
+              <MenuItem value={element.value} key={element.id}>
+                {element.name}
+              </MenuItem>
             ))}
           </Select>
         </FormControl>
 
         <FormControl variant="outlined" className="formControl">
           <InputLabel id="demo-simple-select-outlined-label">
-            Select Type of question
+            Select Type
           </InputLabel>
           <Select
             labelId="demo-simple-select-outlined-label"
@@ -85,7 +84,7 @@ const SelectComponents: React.FC = () => {
             label="Select Type of question"
           >
             {quesetionType.map((element) => (
-              <MenuItem value={element.value} key={element.id}>
+              <MenuItem key={element.id} value={element.value}>
                 {element.name}
               </MenuItem>
             ))}

@@ -33,4 +33,8 @@ export const Content = styled.div`
       min-width: 90%;
     }
   }
+
+  Link {
+    text-decoration: none;
+  }
 `;

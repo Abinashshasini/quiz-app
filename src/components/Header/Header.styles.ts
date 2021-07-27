@@ -20,6 +20,7 @@ export const Content = styled.div`
     font-size: 2.2rem;
     color: white;
     cursor: pointer;
+    margin: 0;
 
     @media screen and (max-width: 500px) {
       font-size: 1.8rem;
